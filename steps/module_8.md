@@ -76,7 +76,7 @@ In this module, we will write some unit tests to test our new endpoints.
 
 DRF comes with a built in APIClient.
 
-1) Unit tests - Copy the following code into /core/tests.py
+1) Unit tests - Copy the following code into /ecommerce/tests.py
 
 ```
 from django.contrib.auth.models import User
@@ -227,7 +227,7 @@ Let's make some calls to our new endpoint.
 
 > This retrieves the auth token for **your_username**
 
-curl -X POST -F 'username=**your_username**' -F 'password=**your_password**' http://api:8000/api-token-auth/
+curl -X POST -F 'username=bosunolaide' -F 'password=olaide87' http://127.0.0.1:8000/api-token-auth/
 
 http post http://api:8000/api-token-auth/ username=**your_username** password=**your_password**
 
